@@ -1,6 +1,6 @@
-import random
+from random import randint
 print("Hello the game begins")
-number = random.randint(0,20)
+number = randint(0,20)
 attempt = 3
 def trying():
 	try:
@@ -19,7 +19,7 @@ def trying():
 		elif int(userNumber) == number and attempt > 1:
 			input("You win!")
 		else:
-			print("Game over")
+			print("Game over\nThe number is ",number)
 	except ValueError:
-		input("ERROR. Try again please")
+		print("ERROR. Try again please")
 trying()
