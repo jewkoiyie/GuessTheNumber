@@ -1,5 +1,5 @@
 from random import randint
-print("Hello the game begins")
+print("Hello the game begins\nPlease choose number between 0 and 20")
 number = randint(0,20)
 attempt = 3
 def trying():
